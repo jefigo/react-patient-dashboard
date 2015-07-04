@@ -12,6 +12,7 @@ var PatientDashboard = React.createClass({
     render: function() {
         return (
             <div>
+                <Navbar />
                 <UserInfo user={this.state}/>
                 <Appointments />
             </div>
