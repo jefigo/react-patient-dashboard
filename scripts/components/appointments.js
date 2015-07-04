@@ -23,16 +23,27 @@ var appointmentsData = [
     }
 ];
 
+// Appoinment date component to render a formatted date
+var AppointmentDate = React.createClass({
+    formatDate: function() {
+        return window.utils.formatDate(this.props.date);
+    },
+    render: function() {
+        return(
+            <th>{this.formatDate()}</th>
+            );
+    }
+});
 
 var  Appointment = React.createClass({
     render: function() {
         return(
             <tr>
                 <th>{this.props.appointment.physician_name}</th>
-                <th>{this.props.appointment.start}</th>
-                <th>{this.props.appointment.end}</th>
+                <th> 6:00 am -  7:00 am</th>
+                <AppointmentDate date={this.props.appointment.start}/>
             </tr>
-        );
+            );
     }
 });
 
