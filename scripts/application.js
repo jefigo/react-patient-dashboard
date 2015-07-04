@@ -1,0 +1,1 @@
+React.render(<PatientDashboard />, document.getElementById("patient-dashboard"));
