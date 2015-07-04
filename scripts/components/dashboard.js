@@ -13,6 +13,7 @@ var PatientDashboard = React.createClass({
         return (
             <div>
                 <UserInfo user={this.state}/>
+                <Appointments />
             </div>
         );
     }
