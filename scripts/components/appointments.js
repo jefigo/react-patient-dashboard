@@ -31,7 +31,7 @@ var AppointmentDate = React.createClass({
     render: function() {
         return(
             <th>{this.formatDate()}</th>
-            );
+        );
     }
 });
 
@@ -43,7 +43,7 @@ var  Appointment = React.createClass({
                 <th> 6:00 am -  7:00 am</th>
                 <AppointmentDate date={this.props.appointment.start}/>
             </tr>
-            );
+        );
     }
 });
 

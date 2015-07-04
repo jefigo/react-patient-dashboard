@@ -1,4 +1,4 @@
-// Profile component to show the user's name and avatar
+// Profile component to render the user's name and avatar
 var UserInfo = React.createClass({
     render: function() {
        return(
